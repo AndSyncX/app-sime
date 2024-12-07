@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>560</width>
+    <height>485</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>560</width>
+    <height>485</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>541</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 127);</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="lblS">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>60</y>
+       <width>80</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 48pt &quot;Algerian&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>S</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblI">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>140</y>
+       <width>80</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 48pt &quot;Algerian&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>I</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblM">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>220</y>
+       <width>80</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 48pt &quot;Algerian&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>M</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblE">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>300</y>
+       <width>80</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 48pt &quot;Algerian&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>E</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblIcon">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>401</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 200pt &quot;Wingdings&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>&amp;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>560</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMatricular">
+    <property name="title">
+     <string>Matricular</string>
+    </property>
+    <addaction name="actionEstudiante"/>
+    <addaction name="actionEstado_de_Pago"/>
+   </widget>
+   <widget class="QMenu" name="menuCarrera">
+    <property name="title">
+     <string>Formación</string>
+    </property>
+    <addaction name="actionCarrera"/>
+    <addaction name="actionCurso"/>
+    <addaction name="actionDocente"/>
+    <addaction name="actionHorario"/>
+    <addaction name="actionSeccion"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Acerca de</string>
+    </property>
+   </widget>
+   <addaction name="menuMatricular"/>
+   <addaction name="menuCarrera"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="actionCarrera">
+   <property name="text">
+    <string>Carreras</string>
+   </property>
+  </action>
+  <action name="actionCurso">
+   <property name="text">
+    <string>Cursos</string>
+   </property>
+  </action>
+  <action name="actionDocente">
+   <property name="text">
+    <string>Docentes</string>
+   </property>
+  </action>
+  <action name="actionEstudiante">
+   <property name="text">
+    <string>Matricular Estudiante</string>
+   </property>
+  </action>
+  <action name="actionEstado_de_Pago">
+   <property name="text">
+    <string>Estado de Pago</string>
+   </property>
+  </action>
+  <action name="actionHorario">
+   <property name="text">
+    <string>Horario</string>
+   </property>
+  </action>
+  <action name="actionSeccion">
+   <property name="text">
+    <string>Seccion</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
