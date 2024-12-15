@@ -6,24 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>801</width>
+    <width>901</width>
     <height>601</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>801</width>
+    <width>901</width>
     <height>601</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>801</width>
+    <width>901</width>
     <height>601</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>SECCION</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
@@ -31,7 +31,7 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>531</width>
+      <width>631</width>
       <height>181</height>
      </rect>
     </property>
@@ -103,7 +103,7 @@
       <rect>
        <x>90</x>
        <y>80</y>
-       <width>171</width>
+       <width>231</width>
        <height>31</height>
       </rect>
      </property>
@@ -113,7 +113,7 @@
       <rect>
        <x>90</x>
        <y>120</y>
-       <width>171</width>
+       <width>231</width>
        <height>31</height>
       </rect>
      </property>
@@ -121,7 +121,7 @@
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>340</x>
        <y>40</y>
        <width>61</width>
        <height>31</height>
@@ -134,9 +134,9 @@
     <widget class="QComboBox" name="cboCurso">
      <property name="geometry">
       <rect>
-       <x>340</x>
+       <x>410</x>
        <y>40</y>
-       <width>171</width>
+       <width>211</width>
        <height>31</height>
       </rect>
      </property>
@@ -144,7 +144,7 @@
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>340</x>
        <y>80</y>
        <width>61</width>
        <height>31</height>
@@ -157,9 +157,9 @@
     <widget class="QLineEdit" name="txtNombre">
      <property name="geometry">
       <rect>
-       <x>340</x>
+       <x>410</x>
        <y>80</y>
-       <width>171</width>
+       <width>211</width>
        <height>31</height>
       </rect>
      </property>
@@ -172,7 +172,7 @@
     <widget class="QLineEdit" name="txtCapacidad">
      <property name="geometry">
       <rect>
-       <x>340</x>
+       <x>410</x>
        <y>120</y>
        <width>81</width>
        <height>31</height>
@@ -187,7 +187,7 @@
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>340</x>
        <y>120</y>
        <width>61</width>
        <height>31</height>
@@ -201,7 +201,7 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>650</x>
       <y>10</y>
       <width>241</width>
       <height>181</height>
@@ -282,7 +282,7 @@
      <rect>
       <x>10</x>
       <y>190</y>
-      <width>781</width>
+      <width>881</width>
       <height>401</height>
      </rect>
     </property>
@@ -300,7 +300,7 @@
       <rect>
        <x>15</x>
        <y>31</y>
-       <width>751</width>
+       <width>851</width>
        <height>351</height>
       </rect>
      </property>
@@ -322,7 +322,7 @@
       </font>
      </property>
      <attribute name="horizontalHeaderDefaultSectionSize">
-      <number>122</number>
+      <number>170</number>
      </attribute>
      <column>
       <property name="text">

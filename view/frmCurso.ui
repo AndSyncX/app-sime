@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>650</width>
-    <height>800</height>
+    <width>651</width>
+    <height>801</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>650</width>
-    <height>800</height>
+    <width>651</width>
+    <height>801</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>650</width>
-    <height>800</height>
+    <width>651</width>
+    <height>801</height>
    </size>
   </property>
   <property name="acceptDrops">

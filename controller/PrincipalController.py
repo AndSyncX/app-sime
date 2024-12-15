@@ -8,8 +8,9 @@ from controller.DocenteController import DocenteController
 from controller.EstudianteController import EstudianteController
 from controller.HorarioController import HorarioController
 from controller.MatriculaController import MatriculaController
-from controller.PersonaController import PersonaController
 from controller.SeccionController import SeccionController
+from controller.ModalidadController import ModalidadController
+from controller.DiaSemanaController import DiaSemanaController
 
 class PrincipalController():
     
@@ -17,40 +18,64 @@ class PrincipalController():
         app = QtWidgets.QApplication([])
         self.ventana = uic.loadUi("view/main.ui")
         self.ventana.show()
-        self.ventana.actionCarrera.triggered.connect(self.actionCarreraClick)
-        #self.ventana.actionConcepto.triggered.connect(self.actionConceptoClick)
-        #self.ventana.actionCuota.triggered.connect(self.actionCuotaClick)
-        self.ventana.actionCurso.triggered.connect(self.actionCursoClick)
-        #self.ventana.actionDetalle.triggered.connect(self.actionDetalleClick)
-        #self.ventana.actionDocente.triggered.connect(self.actionDocenteClick)
-        self.ventana.actionEstudiante.triggered.connect(self.actionEstudianteClick)
-        self.ventana.actionHorario.triggered.connect(self.actionHorarioClick)
-        #self.ventana.actionMatricula.triggered.connect(self.actionMatriculaClick)
-        #self.ventana.actionPersona.triggered.connect(self.actionPersonaClick)
-        self.ventana.actionSeccion.triggered.connect(self.actionSeccionClick)
+        self.ventana.btnCarrera.clicked.connect(self.btnCarreraClick)
+        self.ventana.btnConcepto.clicked.connect(self.btnConceptoClick)
+        self.ventana.btnCuota.clicked.connect(self.btnCuotaClick)
+        self.ventana.btnCurso.clicked.connect(self.btnCursoClick)
+        self.ventana.btnDetalle.clicked.connect(self.btnDetalleClick)
+        self.ventana.btnDocente.clicked.connect(self.btnDocenteClick)
+        self.ventana.btnEstudiante.clicked.connect(self.btnEstudianteClick)
+        self.ventana.btnHorario.clicked.connect(self.btnHorarioClick)
+        self.ventana.btnMatricula.clicked.connect(self.btnMatriculaClick)
+        self.ventana.btnSeccion.clicked.connect(self.btnSeccionClick)
+        self.ventana.btnModalidad.clicked.connect(self.btnModalidadClick)
+        self.ventana.btnDiaSemana.clicked.connect(self.btnDiaSemanaClick)
         app.exec()
     
-    def actionCarreraClick(self):
+    def btnCarreraClick(self):
         self.frmCarrera = CarreraController()
         self.frmCarrera.ventana.show()
     
-    def actionConceptoClick(self):
+    def btnConceptoClick(self):
         self.frmConcepto = ConceptoController()
         self.frmConcepto.ventana.show()
     
-    def actionEstudianteClick(self):
+    def btnEstudianteClick(self):
         self.frmEstudiante = EstudianteController()
         self.frmEstudiante.ventana.show()
         
-    def actionCursoClick(self):
+    def btnCursoClick(self):
         self.frmCurso = CursoController()
         self.frmCurso.ventana.show()
 
-    def actionHorarioClick(self):
+    def btnHorarioClick(self):
         self.frmHorario = HorarioController()
         self.frmHorario.ventana.show()
     
-    def actionSeccionClick(self):
+    def btnSeccionClick(self):
         self.frmSeccion = SeccionController()
         self.frmSeccion.ventana.show()
     
+    def btnDocenteClick(self):
+        self.frmDocente = DocenteController()
+        self.frmDocente.ventana.show()
+
+    def btnModalidadClick(self):
+        self.frmModalidad = ModalidadController()
+        self.frmModalidad.ventana.show()
+    
+    def btnDiaSemanaClick(self):
+        self.frmDiaSemana = DiaSemanaController()
+        self.frmDiaSemana.ventana.show()
+
+    def btnMatriculaClick(self):
+        self.frmMatricula = MatriculaController()
+        self.frmMatricula.ventana.show()
+    
+    def btnCuotaClick(self):
+        self.frmCuota = CuotaController()
+        self.frmCuota.ventana.show()
+    
+    def btnDetalleClick(self):
+        self.frmDetalle = DetalleController()
+        self.frmDetalle.ventana.show()

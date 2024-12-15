@@ -72,7 +72,6 @@ class CarreraController:
     def listarCarrera(self):
         self.ventana.txtIdCarrera.setEnabled(False)
         listaCarrera = self.objCarreraRepository.listarCarrera()
-        print(listaCarrera)
         cantidad = len(listaCarrera)
         self.ventana.tblCarrera.setRowCount(cantidad)
         fila = 0

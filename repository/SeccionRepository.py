@@ -6,12 +6,39 @@ class SeccionRepository:
 
     def listarSeccion(self):
         cursor = self.conexion.cursor()
-        sql = "SELECT s.id_seccion, p.ape_paterno AS nombre_docente, h.hora_inicio, c.nom_curso, s.nom_seccion, s.capacidad FROM seccion s INNER JOIN docente d ON d.id_docente = s.id_docente INNER JOIN persona p ON p.id_persona = d.id_persona INNER JOIN horario h ON h.id_horario = s.id_horario INNER JOIN curso c ON c.id_curso = s.id_curso ORDER BY id_seccion DESC"
-        cursor.execute(sql)
-        return cursor.fetchall()
+        cursor.callproc('listarSeccion')
+        for result in cursor.stored_results():
+            return result.fetchall()
+        return []
     
     def buscarSeccionID(self, idseccion):
         cursor = self.conexion.cursor()
-        sql = "SELECT s.id_seccion, p.ape_paterno, h.hora_inicio, c.nom_curso, s.nom_seccion, s.capacidad FROM seccion s INNER JOIN docente d ON d.id_docente = s.id_docente INNER JOIN persona p ON p.id_persona = d.id_persona INNER JOIN horario h ON h.id_horario = s.id_horario INNER JOIN curso c ON c.id_curso = s.id_curso  WHERE id_seccion = '{}' ORDER BY id_seccion DESC".format(idseccion)
-        cursor.execute(sql)
-        return cursor.fetchone()
+        cursor.callproc('listarSeccionxId', [idseccion])
+        for result in cursor.stored_results():
+            return result.fetchone()
+        return []
+    
+    def insertarSeccion(self, seccion):
+        cursor = self.conexion.cursor()
+        cursor.callproc('insertarSeccion', (
+            seccion.id_docente,
+            seccion.id_horario,
+            seccion.id_curso,
+            seccion.nom_seccion,
+            seccion.capacidad
+        ))
+        self.conexion.commit()
+        cursor.close()
+    
+    def actualizarSeccion(self, seccion):
+        cursor = self.conexion.cursor()
+        cursor.callproc('actualizarSeccion', (
+            seccion.id_docente,
+            seccion.id_horario,
+            seccion.id_curso,
+            seccion.nom_seccion,
+            seccion.capacidad,
+            seccion.id_seccion
+        ))
+        self.conexion.commit()
+        cursor.close()

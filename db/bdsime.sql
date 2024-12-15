@@ -7,7 +7,7 @@ create table persona(
     ape_materno varchar(50) not null,
     nom1 varchar(50) not null,
     nom2 varchar(50),
-    dni int unique not null,
+    dni varchar(8) unique not null,
     departamento varchar(50),
     provincia varchar(50),
     distrito varchar(50),
@@ -15,7 +15,6 @@ create table persona(
     celular int unique not null,
     correo varchar(150) unique not null,
     fec_nacimiento date not null,
-    estado_civil varchar(25),
     sexo char(1)
 );
 
@@ -32,19 +31,19 @@ insert into persona(
     celular,
     correo,
     fec_nacimiento,
-    estado_civil,
     sexo
 ) values
-('Fernandez', 'Pancorvo', 'Joel', 'Anderson', 72463299, 'Lima', 'Lima', 'Villa  el Salvador', 'Sector 1 Grupo 9 Mz G Lt 17 Av. Revolucion', 969480248, 'fernandezpancorvo@gmail.com', '1998-10-25', 'Soltero', 'M'),
-('Gonzales', 'Lopez', 'Maria', 'Josefa', 70328475, 'Arequipa', 'Arequipa', 'Cayma', 'Av. Bolognesi 123', 958342156, 'maria.gonzalez@gmail.com', '1995-03-12', 'Casada', 'F'),
-('Rodriguez', 'Perez', 'Luis', 'Alberto', 65897412, 'Cusco', 'Cusco', 'Wanchaq', 'Calle Zetas 45', 912345678, 'luis.rodriguez@gmail.com', '1990-07-25', 'Soltero', 'M'),
-('Torres', 'Garcia', 'Ana', 'Carolina', 74859302, 'Piura', 'Piura', 'Catacaos', 'Jr. San Martin 678', 987654321, 'ana.torres@gmail.com', '2000-05-16', 'Soltera', 'F'),
-('Lopez', 'Mendoza', 'Carlos', 'Eduardo', 81234567, 'Lambayeque', 'Chiclayo', 'La Victoria', 'Av. Grau 456', 976543210, 'carlos.lopez@gmail.com', '1997-11-02', 'Soltero', 'M'),
-('Gomez', 'Perez', 'Carlos', 'Alberto', 12345678, 'Lima', 'Lima', 'Miraflores', 'Av. Pardo 123', 981654321, 'carlos.gomez@email.com', '1980-06-15', 'Casado', 'M'),
-('Martinez', 'Ruiz', 'Laura', 'Elena', 23456789, 'Lima', 'Lima', 'San Isidro', 'Calle Las Palmas 456', 912445678, 'laura.martinez@email.com', '1975-11-22', 'Soltera', 'F'),
-('Lopez', 'Torres', 'Juan', 'Carlos', 34567890, 'Arequipa', 'Arequipa', 'Centro', 'Calle A 789', 923456759, 'juan.lopez@email.com', '1982-04-10', 'Viudo', 'M'),
-('Rodriguez', 'Sanchez', 'Ana', 'Maria', 45678901, 'Cusco', 'Cusco', 'Wanchaq', 'Jr. Real 101', 934567690, 'ana.rodriguez@email.com', '1988-02-05', 'Soltera', 'F'),
-('Fernandez', 'Diaz', 'Pedro', 'Jose', 56789012, 'Lima', 'Lima', 'Callao', 'Av. La Marina 200', 945676901, 'pedro.fernandez@email.com', '1990-09-14', 'Casado', 'M');
+
+('Fernandez', 'Pancorvo', 'Joel', 'Anderson', 72463299, 'Lima', 'Lima', 'Villa  el Salvador', 'Sector 1 Grupo 9 Mz G Lt 17 Av. Revolucion', 969480248, 'fernandezpancorvo@gmail.com', '1998-10-25', 'M'),
+('Gonzales', 'Lopez', 'Maria', 'Josefa', 70328475, 'Arequipa', 'Arequipa', 'Cayma', 'Av. Bolognesi 123', 958342156, 'maria.gonzalez@gmail.com', '1995-03-12', 'F'),
+('Rodriguez', 'Perez', 'Luis', 'Alberto', 65897412, 'Cusco', 'Cusco', 'Wanchaq', 'Calle Zetas 45', 912345678, 'luis.rodriguez@gmail.com', '1990-07-25', 'M'),
+('Torres', 'Garcia', 'Ana', 'Carolina', 74859302, 'Piura', 'Piura', 'Catacaos', 'Jr. San Martin 678', 987654321, 'ana.torres@gmail.com', '2000-05-16', 'F'),
+('Lopez', 'Mendoza', 'Carlos', 'Eduardo', 81234567, 'Lambayeque', 'Chiclayo', 'La Victoria', 'Av. Grau 456', 976543210, 'carlos.lopez@gmail.com', '1997-11-02', 'M'),
+('Gomez', 'Perez', 'Carlos', 'Alberto', 12345678, 'Lima', 'Lima', 'Miraflores', 'Av. Pardo 123', 981654321, 'carlos.gomez@email.com', '1980-06-15', 'M'),
+('Martinez', 'Ruiz', 'Laura', 'Elena', 23456789, 'Lima', 'Lima', 'San Isidro', 'Calle Las Palmas 456', 912445678, 'laura.martinez@email.com', '1975-11-22', 'F'),
+('Lopez', 'Torres', 'Juan', 'Carlos', 34567890, 'Arequipa', 'Arequipa', 'Centro', 'Calle A 789', 923456759, 'juan.lopez@email.com', '1982-04-10', 'M'),
+('Rodriguez', 'Sanchez', 'Ana', 'Maria', 45678901, 'Cusco', 'Cusco', 'Wanchaq', 'Jr. Real 101', 934567690, 'ana.rodriguez@email.com', '1988-02-05', 'F'),
+('Fernandez', 'Diaz', 'Pedro', 'Jose', 56789012, 'Lima', 'Lima', 'Callao', 'Av. La Marina 200', 945676901, 'pedro.fernandez@email.com', '1990-09-14', 'M');
 
 create table modalidad(
     id_modalidad int primary key auto_increment,
@@ -195,35 +194,110 @@ insert into horario(
 ('12:00:00', '16:00:00', 5),
 ('16:00:00', '20:00:00', 5);
 
-SELECT
-	h.id_horario,
-	h.hora_inicio,
-	h.hora_fin,
-	d.descripcion 
-FROM horario h
-INNER JOIN diaSemana d 
-where h.id_dia_semana = d.id_dia_semana 
-ORDER BY id_horario 
-DESC;
+create table seccion(
+	id_seccion int primary key auto_increment,
+    id_docente int,
+    id_horario int,
+    id_curso int,
+    nom_seccion char(6),
+    capacidad int,
+    foreign key (id_docente) references docente(id_docente),
+    foreign key (id_horario) references horario(id_horario),
+    foreign key (id_curso) references curso(id_curso)
+);
 
-SELECT  
-	d.id_docente,
-	p.ape_paterno,
-	p.ape_materno,
-	p.nom1,
-	p.nom2,
-	p.dni,
-	p.departamento,
-	p.provincia,
-	p.distrito,
-	p.direccion,
-	p.celular,
-	p.correo,
-	p.fec_nacimiento,
-	p.estado_civil,
-	p.sexo
-FROM docente d 
-INNER JOIN persona p 
-ON d.id_persona = p.id_persona
-ORDER BY id_docente
-DESC;
+insert into seccion(
+	id_docente,
+    id_horario,
+    id_curso,
+    nom_seccion,
+    capacidad
+) values
+(1, 1, 1, 'MAT101', 30),
+(2, 1, 2, 'COM101', 30),
+(3, 1, 3, 'QUI101', 30),
+(4, 1, 4, 'FIS101', 30);
+
+create table concepto(
+	id_concepto int primary key auto_increment,
+    descripcion varchar(50) not null,
+    monto decimal(10, 2) not null
+);
+
+insert into concepto(
+	descripcion,
+	monto
+) values
+('Matrícula', 150.00),
+('Pensión Mensual', 400.00),
+('Cuota Especial', 200.00),
+('Material Educativo', 100.00),
+('Seguro Estudiantil', 50.00);
+
+create table matricula(
+	id_matricula int primary key auto_increment,
+    id_seccion int,
+    id_estudiante int,
+    fec_matricula date,
+    estado varchar(25),
+    periodo varchar(50),
+    foreign key (id_seccion) references seccion(id_seccion),
+    foreign key (id_estudiante) references estudiante(id_estudiante)
+);
+
+insert into matricula(
+	id_seccion,
+    id_estudiante,
+    fec_matricula,
+    estado,
+    periodo
+) values
+(1, 1, '2024-01-15', 'Activo', '2024-I'),
+(1, 2, '2024-01-16', 'Activo', '2024-I'),
+(1, 3, '2024-01-17', 'Suspendido', '2024-I'),
+(1, 4, '2024-01-18', 'Activo', '2024-I'),
+(1, 5, '2024-01-19', 'Retirado', '2024-I');
+
+create table cuota (
+	id_cuota int primary key auto_increment,
+    id_estudiante int,
+    id_concepto int,
+    id_matricula int,
+    fec_pago date,
+    monto decimal(10, 2),
+    estado varchar(20),
+    foreign key (id_concepto) references concepto(id_concepto),
+    foreign key (id_matricula) references matricula(id_matricula)
+);
+
+insert into Cuota(
+	id_estudiante,
+    id_concepto,
+    id_matricula,
+    fec_pago,
+    monto,
+    estado
+)values
+(1, 2, 1, '2024-02-01', 300.00, 'Pagada'),
+(1, 2, 1, '2024-02-05', 300.00, 'Pendiente'),
+(1, 4, 1, '2024-02-10', 200.00, 'Pagada'),
+(1, 3, 1, '2024-02-15', 50.00, 'Pendiente'),
+(1, 5, 1, '2024-02-20', 100.00, 'Pagada');
+
+create table detalle (
+	id_detalle int primary key auto_increment,
+    id_cuota int,
+    id_concepto int,
+    fec_detalle date,
+    monto_detalle decimal(10, 2),
+    observacion varchar(255),
+    foreign key (id_cuota) references cuota(id_cuota),
+    foreign key (id_concepto) references concepto(id_concepto)
+);
+
+insert into detalle values
+(1, 1, 2, '2024-02-01', 300.00, 'Cuota Mensual Enero'),
+(2, 2, 2, '2024-02-05', 300.00, 'Cuota Mensual Febrero'),
+(3, 3, 4, '2024-02-10', 200.00, 'Seguro Estudiantil'),
+(4, 4, 3, '2024-02-15', 50.00, 'Pago Materiales'),
+(5, 5, 5, '2024-02-20', 100.00, 'Pago de Actividades');

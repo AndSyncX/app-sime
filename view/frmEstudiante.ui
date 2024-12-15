@@ -6,12 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1200</width>
-    <height>850</height>
+    <width>1321</width>
+    <height>781</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>1321</width>
+    <height>781</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1321</width>
+    <height>781</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>ESTUDIANTE</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
@@ -19,56 +31,45 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>1181</width>
-      <height>401</height>
+      <width>1061</width>
+      <height>271</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Bahnschrift SemiBold</family>
+      <family>Bahnschrift</family>
       <pointsize>9</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
      </font>
     </property>
     <property name="title">
-     <string>Información del estudiante:</string>
+     <string>Datos:</string>
     </property>
-    <widget class="QComboBox" name="cboModalidad">
+    <widget class="QLabel" name="label_14">
      <property name="geometry">
       <rect>
-       <x>580</x>
-       <y>50</y>
-       <width>201</width>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bahnschrift</family>
        <weight>50</weight>
        <bold>false</bold>
       </font>
      </property>
-    </widget>
-    <widget class="QLabel" name="label_8">
-     <property name="geometry">
-      <rect>
-       <x>490</x>
-       <y>50</y>
-       <width>71</width>
-       <height>31</height>
-      </rect>
-     </property>
      <property name="text">
-      <string>Modalidad:</string>
+      <string>ID:</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="txtIdCarrera">
+    <widget class="QLineEdit" name="txtIdEstudiante">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>30</y>
-       <width>81</width>
+       <x>100</x>
+       <y>20</y>
+       <width>51</width>
        <height>31</height>
       </rect>
      </property>
@@ -80,53 +81,18 @@
       </font>
      </property>
     </widget>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="label_17">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>50</weight>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>ID_Estudiante:</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="txtIdCarrera_2">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>70</y>
-       <width>81</width>
+       <x>10</x>
+       <y>60</y>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>Bahnschrift</family>
-       <weight>50</weight>
-       <bold>false</bold>
-      </font>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>70</y>
-       <width>131</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -135,17 +101,44 @@
       <string>Apellido Paterno:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_5">
+    <widget class="QLineEdit" name="txtApepaterno">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>110</y>
-       <width>131</width>
+       <x>100</x>
+       <y>60</y>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Normal</enum>
+     </property>
+     <property name="cursorMoveStyle">
+      <enum>Qt::VisualMoveStyle</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -154,12 +147,12 @@
       <string>Apellido Materno:</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="txtIdCarrera_5">
+    <widget class="QLineEdit" name="txtApematerno">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>110</y>
-       <width>81</width>
+       <x>100</x>
+       <y>100</y>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -171,12 +164,12 @@
       </font>
      </property>
     </widget>
-    <widget class="QLineEdit" name="txtIdCarrera_6">
+    <widget class="QLineEdit" name="txtNom1">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>150</y>
-       <width>81</width>
+       <x>100</x>
+       <y>140</y>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -188,17 +181,18 @@
       </font>
      </property>
     </widget>
-    <widget class="QLabel" name="label_6">
+    <widget class="QLabel" name="label_19">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>150</y>
-       <width>131</width>
+       <x>10</x>
+       <y>140</y>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bahnschrift</family>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -207,17 +201,18 @@
       <string>Primer Nombre:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_7">
+    <widget class="QLabel" name="label_20">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>190</y>
-       <width>131</width>
+       <x>10</x>
+       <y>180</y>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bahnschrift</family>
        <weight>50</weight>
        <bold>false</bold>
       </font>
@@ -226,11 +221,65 @@
       <string>Segundo Nombre:</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="txtIdCarrera_7">
+    <widget class="QLineEdit" name="txtNom2">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>190</y>
+       <x>100</x>
+       <y>180</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>DNI:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtDNI">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>220</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>140</y>
        <width>81</width>
        <height>31</height>
       </rect>
@@ -241,6 +290,638 @@
        <weight>50</weight>
        <bold>false</bold>
       </font>
+     </property>
+     <property name="text">
+      <string>Distrito:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtDistrito">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>140</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtProvincia">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>60</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>60</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Departamento:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>180</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Dirección:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Provincia:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtDireccion">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>180</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtDepartamento">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>100</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Normal</enum>
+     </property>
+     <property name="cursorMoveStyle">
+      <enum>Qt::VisualMoveStyle</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>60</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Celular:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtCelular">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>60</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>220</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Correo:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtCorreo">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>220</y>
+       <width>241</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>100</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Sexo:</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbMasculino">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>100</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>M</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rdFemenino">
+     <property name="geometry">
+      <rect>
+       <x>770</x>
+       <y>100</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>F</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtFecnacimiento">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>20</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Normal</enum>
+     </property>
+     <property name="cursorMoveStyle">
+      <enum>Qt::VisualMoveStyle</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>20</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Nacimiento:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_28">
+     <property name="geometry">
+      <rect>
+       <x>650</x>
+       <y>140</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Carrera:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cboCarrera">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>140</y>
+       <width>331</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>20</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>ID_Persona:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtIdPersona">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>20</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>1301</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Registro:</string>
+    </property>
+    <widget class="QTableWidget" name="tblEstudiante">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>20</y>
+       <width>1271</width>
+       <height>461</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>601</width>
+       <height>351</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>11111</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+      </font>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>150</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>ID_Estudiante</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ID_Persona</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ape_Paterno</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ape_Materno</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Nom1</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Nom2</string>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>DNI</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Departamento</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Provincia</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Distrito</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Direccion</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Celular</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Correo</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Fec_Nacimiento</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Sexo</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Carrera</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>20</y>
+      <width>231</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="btnRegistrar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>211</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Registrar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnLimpiar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>211</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Limpiar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnActualizar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>211</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Actualizar</string>
      </property>
     </widget>
    </widget>

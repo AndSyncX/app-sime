@@ -1,7 +1,7 @@
 class Persona:
     
     def __init__(self, _id_persona, _ape_paterno, _ape_materno,_nom1, _nom2, _dni, _departamento, _provincia, 
-                 _distrito, _direccion,_celular,_correo, _fec_nacimiento, _estado_civil, _sexo):
+                 _distrito, _direccion,_celular,_correo, _fec_nacimiento, _sexo):
         self.id_persona = _id_persona
         self.ape_paterno = _ape_paterno
         self.ape_materno = _ape_materno
@@ -15,5 +15,4 @@ class Persona:
         self.celular = _celular
         self.correo = _correo
         self.fec_nacimiento = _fec_nacimiento
-        self.estado_civil = _estado_civil
         self.sexo = _sexo

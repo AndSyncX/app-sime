@@ -6,24 +6,33 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>560</width>
-    <height>485</height>
+    <width>1001</width>
+    <height>601</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>560</width>
-    <height>485</height>
+    <width>1001</width>
+    <height>601</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>560</width>
-    <height>485</height>
+    <width>1001</width>
+    <height>601</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <family>Bahnschrift</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>SIME</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
@@ -31,12 +40,18 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>541</width>
-      <height>441</height>
+      <width>981</width>
+      <height>581</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 170, 127);</string>
+     <string notr="true">background-color: rgb(170, 255, 255);</string>
     </property>
     <property name="title">
      <string/>
@@ -44,81 +59,20 @@
     <property name="flat">
      <bool>false</bool>
     </property>
-    <widget class="QLabel" name="lblS">
+    <widget class="QLabel" name="lblSime">
      <property name="geometry">
       <rect>
-       <x>440</x>
-       <y>60</y>
-       <width>80</width>
+       <x>0</x>
+       <y>390</y>
+       <width>391</width>
        <height>80</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 48pt &quot;Algerian&quot;;
-color: rgb(255, 255, 255);</string>
+      <string notr="true">font: 48pt &quot;Algerian&quot;;</string>
      </property>
      <property name="text">
-      <string>S</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblI">
-     <property name="geometry">
-      <rect>
-       <x>440</x>
-       <y>140</y>
-       <width>80</width>
-       <height>80</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 48pt &quot;Algerian&quot;;
-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>I</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblM">
-     <property name="geometry">
-      <rect>
-       <x>440</x>
-       <y>220</y>
-       <width>80</width>
-       <height>80</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 48pt &quot;Algerian&quot;;
-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>M</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblE">
-     <property name="geometry">
-      <rect>
-       <x>440</x>
-       <y>300</y>
-       <width>80</width>
-       <height>80</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 48pt &quot;Algerian&quot;;
-color: rgb(255, 255, 255);</string>
-     </property>
-     <property name="text">
-      <string>E</string>
+      <string>S  I  M  E</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -127,15 +81,15 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="lblIcon">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>401</width>
-       <height>401</height>
+       <x>0</x>
+       <y>60</y>
+       <width>391</width>
+       <height>391</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">font: 200pt &quot;Wingdings&quot;;
-color: rgb(255, 255, 255);</string>
+</string>
      </property>
      <property name="text">
       <string>&amp;</string>
@@ -144,59 +98,298 @@ color: rgb(255, 255, 255);</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
+    <widget class="QPushButton" name="btnEstudiante">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>80</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 188, 255);</string>
+     </property>
+     <property name="text">
+      <string>ESTUDIANTE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDocente">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>80</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>DOCENTE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMatricula">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>150</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 188, 255);</string>
+     </property>
+     <property name="text">
+      <string>MATRICULA</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSeccion">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>150</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>SECCION</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCuota">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>220</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 188, 255);</string>
+     </property>
+     <property name="text">
+      <string>CUOTA</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnHorario">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>220</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>HORARIO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnConcepto">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>290</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 188, 255);</string>
+     </property>
+     <property name="text">
+      <string>CONCEPTO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCarrera">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>290</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>CARRERA</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDetalle">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>360</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 188, 255);</string>
+     </property>
+     <property name="text">
+      <string>DETALLE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnModalidad">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>360</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>MODALIDAD</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCurso">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>430</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(2, 188, 255);</string>
+     </property>
+     <property name="text">
+      <string>CURSO</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDiaSemana">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>430</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bahnschrift</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 85, 255);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>DIA SEMANA</string>
+     </property>
+    </widget>
+    <zorder>lblIcon</zorder>
+    <zorder>btnEstudiante</zorder>
+    <zorder>btnDocente</zorder>
+    <zorder>btnMatricula</zorder>
+    <zorder>btnSeccion</zorder>
+    <zorder>btnCuota</zorder>
+    <zorder>btnHorario</zorder>
+    <zorder>btnConcepto</zorder>
+    <zorder>btnCarrera</zorder>
+    <zorder>btnDetalle</zorder>
+    <zorder>btnModalidad</zorder>
+    <zorder>btnCurso</zorder>
+    <zorder>btnDiaSemana</zorder>
+    <zorder>lblSime</zorder>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>560</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuMatricular">
-    <property name="title">
-     <string>Matricular</string>
-    </property>
-    <addaction name="actionEstudiante"/>
-    <addaction name="actionEstado_de_Pago"/>
-   </widget>
-   <widget class="QMenu" name="menuCarrera">
-    <property name="title">
-     <string>Formación</string>
-    </property>
-    <addaction name="actionCarrera"/>
-    <addaction name="actionCurso"/>
-    <addaction name="actionDocente"/>
-    <addaction name="actionHorario"/>
-    <addaction name="actionSeccion"/>
-   </widget>
-   <widget class="QMenu" name="menuAbout">
-    <property name="title">
-     <string>Acerca de</string>
-    </property>
-   </widget>
-   <addaction name="menuMatricular"/>
-   <addaction name="menuCarrera"/>
-   <addaction name="menuAbout"/>
-  </widget>
-  <action name="actionCarrera">
-   <property name="text">
-    <string>Carreras</string>
-   </property>
-  </action>
-  <action name="actionCurso">
-   <property name="text">
-    <string>Cursos</string>
-   </property>
-  </action>
   <action name="actionDocente">
    <property name="text">
     <string>Docentes</string>
    </property>
   </action>
-  <action name="actionEstudiante">
+  <action name="actionMatricula">
    <property name="text">
     <string>Matricular Estudiante</string>
    </property>
@@ -214,6 +407,49 @@ color: rgb(255, 255, 255);</string>
   <action name="actionSeccion">
    <property name="text">
     <string>Seccion</string>
+   </property>
+  </action>
+  <action name="actionConcepto">
+   <property name="text">
+    <string>Concepto</string>
+   </property>
+  </action>
+  <action name="actionEstudiante">
+   <property name="text">
+    <string>Registrar Estudiante</string>
+   </property>
+  </action>
+  <action name="actionDetalle">
+   <property name="text">
+    <string>Detalle</string>
+   </property>
+  </action>
+  <action name="actionDia_Semana">
+   <property name="text">
+    <string>Dia Semana</string>
+   </property>
+  </action>
+  <action name="actionModalidad">
+   <property name="text">
+    <string>Modalidad</string>
+   </property>
+  </action>
+  <action name="actionCuota">
+   <property name="text">
+    <string>Cuota</string>
+   </property>
+  </action>
+  <action name="actionCurso">
+   <property name="text">
+    <string>Curso</string>
+   </property>
+   <property name="toolTip">
+    <string>Curso</string>
+   </property>
+  </action>
+  <action name="actionCarrera">
+   <property name="text">
+    <string>Carrera</string>
    </property>
   </action>
  </widget>
